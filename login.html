@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WPA3 | Login</title>
+    <link rel="icon" href="assets/images/msuicon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/login.css" <script src="assets/js/login.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <article class="grid">
+            <div class="card" style="width: 50%;">
+                <h1 style="text-align: center;">Web Programming A3</h1>
+            </div>
+
+            <div class="card" style="width: 50%;">
+                <form action="assets/php/login.php" method="post">
+                    <label for="uname" class="customheader">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+                    <label for="pswd" class="customheader">Password</label>
+                    <input type="password" placeholder="Enter Password" name="pswd" required><br><br>
+
+                    <div class="flex">
+                        <button type="submit" class="btndual">Login</button>
+                        <button type="button" class="btndual"
+                            onclick="document.getElementById('registerform').style.display='block'">Register</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+
+        <div id="registerform" class="modal">
+            <form class="modal-content animate" action="assets/php/register.php" method="post">
+
+
+                <div class="container">
+                    <label for="email" class="customheader">Email Address</label>
+                    <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+                    <label for="uname" class="customheader">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+                    <label for="pswd" class="customheader">Password</label>
+                    <input type="password" placeholder="Enter Password" name="pswd" required>
+
+                    <button type="submit">Register</button>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('registerform').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

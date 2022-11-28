@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WPA3 | Logging Out...</title>
+    <link rel="icon" href="../images/msuicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/redirect.css">
+    <script src="../js/redirect.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <article class="grid">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <br><br>
+            <div class="card" style="text-align: center; font-family: Arial ;">
+                We've encountered an error.. Try checking if your login details are correct and if you are logged in.<br>
+                Redirecting you back to the login page...<br><br>
+                <div id="current_date" style="font-size: small;"></div>
+            </div>
+        </article>
+    </div>
+</body>
+
+<script>
+    document.getElementById("current_date").innerHTML = Date();
+    error();
+</script>
+
+</html>
